@@ -10,7 +10,7 @@ jobs:
         run: |
           echo "This is triggered by ${{ github.actor}}"
       - name: git Token
-        run: echo "git token is $GIT_TOKEN"
+        run: echo "git token is $GITHUB_TOKEN"
       - name: Print latest github commit
         run: echo "$GITHUB_SHA"
 

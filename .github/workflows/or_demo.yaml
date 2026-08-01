@@ -1,0 +1,10 @@
+name: if_Demo
+on: push
+jobs:
+  if_demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: First condition
+        if: github.actor == 'harshith010' || 'shetty010'
+        run: echo "Triggered by ${{ github.actor }}"
+#        default: echo "Running on other Branch"

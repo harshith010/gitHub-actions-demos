@@ -17,5 +17,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print the testEnv
-        run: echo "${{ inputs.testEnv }}"
+        run: echo "Name of the environment is ${{ inputs.testEnv }}"
 

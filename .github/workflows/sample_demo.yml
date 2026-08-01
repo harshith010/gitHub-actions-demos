@@ -8,3 +8,5 @@ jobs:
         run: echo "Welcome to the GHA for the repo ${{ github.repository }}"
       - name: userName
         run: echo "This is run by ${{ github.actor }}"
+      - name: Print GIT_TOKEN
+        run: echo "Value of token- $GIT_TOKEN"

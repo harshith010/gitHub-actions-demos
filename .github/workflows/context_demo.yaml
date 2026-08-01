@@ -1,0 +1,12 @@
+name: context variable demo
+on: workflow_dispatch
+jobs:
+  context_demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: action/checkout@v4
+      - name: who am I
+        run: |
+          echo "This is triggered by ${{ github.actor}}"
+

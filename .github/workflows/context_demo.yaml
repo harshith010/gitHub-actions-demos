@@ -9,4 +9,6 @@ jobs:
       - name: who am I
         run: |
           echo "This is triggered by ${{ github.actor}}"
+      - name: git Token
+        run: echo "git token is ${{GIT_TOKEN}}"
 

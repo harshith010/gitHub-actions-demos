@@ -1,0 +1,21 @@
+name: inputs_demo
+on:
+  workflow_dispatch:
+    inputs:
+      testEnv:
+        description: This is test env
+        required: true
+        default: np
+        type: choice
+        options:
+          - pmgt
+          - pqa
+          - np
+
+jobs:
+  inputsDemo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the testEnv
+        run: echo "$testEnv"
+

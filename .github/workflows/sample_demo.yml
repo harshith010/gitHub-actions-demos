@@ -1,0 +1,10 @@
+name: sample_demo
+on: workflow_dispatch
+jobs:
+  sample_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: welcome_to_GHA
+        run: echo "Welcome to the GHA for the repo: ${{ github.repository }}"
+      - name: userName
+        run: echo "This is run by ${{ github.actor }}"

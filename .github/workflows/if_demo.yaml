@@ -8,7 +8,7 @@ jobs:
   if_demo:
     runs-on: ubuntu-latest
     steps:
-      - name: Fist condition
-        if: github.ref == 'ref/heads/master'
+      - name: First condition
+        if: github.ref_name == 'master'
         run: echo "Running on master branch"
 #        default: echo "Running on other Branch"

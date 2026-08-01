@@ -1,7 +1,7 @@
-name: if_Demo
+name: or_demo
 on: push
 jobs:
-  if_demo:
+  or_demo:
     runs-on: ubuntu-latest
     steps:
       - name: First condition

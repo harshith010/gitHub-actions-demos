@@ -1,0 +1,14 @@
+name: if_Demo
+on:
+  push:
+    branches:
+      - main
+      - master
+jobs:
+  if_demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fist condition
+        if: github.ref == "main"
+        run: echo "Running on master branch"
+#        default: echo "Running on other Branchs"

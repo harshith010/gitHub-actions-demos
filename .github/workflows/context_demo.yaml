@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: action/checkout@v7.0.1
+        uses: actions/checkout@v7.0.1
       - name: who am I
         run: |
           echo "This is triggered by ${{ github.actor}}"

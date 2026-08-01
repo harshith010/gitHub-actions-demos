@@ -1,0 +1,10 @@
+name: env_demo
+on: workflow_dispatch
+env:
+  P_MIN: N_Modi
+jobs:
+  envDemo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Name of the current Prime Minister of India
+        run: echo "$P_MIN"

@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Fist condition
-        if: github.ref == "main"
+        if: github.ref == "master"
         run: echo "Running on master branch"
-#        default: echo "Running on other Branchs"
+#        default: echo "Running on other Branch"

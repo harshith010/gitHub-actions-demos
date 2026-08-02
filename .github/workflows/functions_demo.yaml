@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: functions to use in workflow
-        if: contains(github.ref_name, 'master')
+        if: contains(github.ref_name, 'main')
         run: echo "Running this workflow using Branch ${{ github.ref_name }}"

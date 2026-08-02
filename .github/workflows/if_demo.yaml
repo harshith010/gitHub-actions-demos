@@ -1,9 +1,9 @@
 name: if_Demo
-on:
-  push:
-    branches:
-      - main
-      - master
+on: workflow_dispatch
+#  push:
+#    branches:
+#      - main
+#      - master
 jobs:
   if_demo:
     runs-on: ubuntu-latest

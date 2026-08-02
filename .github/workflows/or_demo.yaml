@@ -1,10 +1,10 @@
 name: or_demo
-on: push
+on: workflow_dispatch
 jobs:
   or_demo:
     runs-on: ubuntu-latest
     steps:
       - name: First condition
-        if: github.actor == 'harshith01' || 'shetty010'
+        if: github.actor == 'Hari' || github.actor == 'shetty010'
         run: echo "Triggered by ${{ github.actor }}"
 #        default: echo "Running on other Branch"

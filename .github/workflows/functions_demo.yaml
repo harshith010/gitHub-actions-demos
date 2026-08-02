@@ -16,7 +16,7 @@ jobs:
         run: echo "Sending success notification"
   Failure_notify:
     runs-on: ubuntu-latest
-    needs: functionsDemo
+    needs: ['functionsDemo','Success_notify']
     if: failure()
     steps:
       - name: Job is Failed

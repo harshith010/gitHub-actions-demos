@@ -1,0 +1,9 @@
+name: functions_demo
+on: push
+jobs:
+  functionsDemo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: functions to use in workflow
+        if: contains(github.ref_name, master)
+        run: echo "Running this workflow using Branch ${{ github.ref_name }}"

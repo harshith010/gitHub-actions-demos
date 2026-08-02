@@ -13,14 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     needs: functionsDemo
 #    if: success()
-    if: needs.functionsDemo.result == 'success'
+    if: always() && needs.functionsDemo.result == 'success'
     steps:
       - name: Job is successfull
         run: echo "Sending success notification"
   Failure_notify:
     runs-on: ubuntu-latest
     needs: ['functionsDemo']
-    if: needs.functionsDemo.result == 'failure'
+    if: always() && needs.functionsDemo.result == 'failure'
     steps:
       - name: Job is Failed
         run: echo "Sending Failure notification"
